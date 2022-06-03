@@ -6,23 +6,24 @@ class csObj1 {
 
     int v1 = 343;
     int v2 = 343;
+    int result = -2;
 
     // Are These Variables Equal? If Not, Which Is Bigger?
     if(v1 == v2) {
       // Check if v1 and v2 are equal
       System.out.println("V1 ("+v1+") and V2 ("+v2+") are equal");
-      int result = 0;
+      result = 0;
 
     }else {
       // Compare v1 and v2
       if(v1 > v2) {
         // Check if v1 is bigger
         System.out.println("V1 ("+v1+") is GREATER than V2 ("+v2+").");
-        int result = 1;
+        result = 1;
       }else {
         // v2 is bigger
         System.out.println("V1 ("+v1+") is LESS than V2 ("+v2+").");
-        int result = -1;
+        result = -1;
       }
 
     }
@@ -35,7 +36,7 @@ class csObj1 {
         break;
       case 1 :
         break;
-      default:
+      case -2:
         System.out.println("Oops --- Something Went Wrong");
     }
   }
