@@ -9,9 +9,12 @@ class csObj1 {
 
     // Compare Variables
 
-    // Print which variable is bigger
-
-      System.out.println("V1: " + v1 + "   V2: " + v2);
-      // System.out.println("___ is bigger");
+    // Are These Variables Equal? If Not, Which Is Bigger?
+    if(v1 == v2) {
+      //Check if v1 and v2 are equal
+      System.out.println("V1 ("+v1+") and V2 ("+v2+") are equal");
+    }else {
+      System.out.println("V1 ("+v1+") and V2 ("+v2+") are not equal");
+    }
   }
 }
