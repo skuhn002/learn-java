@@ -3,7 +3,7 @@
 class csObj1 {
   public static void main(String[] args) {
     // First Variable
-    int v1 = 13;
+    int v1 = 343;
     // Second Variable
     int v2 = 343;
 
