@@ -2,19 +2,26 @@
 
 class csObj1 {
   public static void main(String[] args) {
-    // First Variable
-    int v1 = 343;
-    // Second Variable
-    int v2 = 343;
+    /* This class compares integers to determine which integer is bigger or if they are equal */
 
-    // Compare Variables
+    int v1 = 343;
+    int v2 = 343;
 
     // Are These Variables Equal? If Not, Which Is Bigger?
     if(v1 == v2) {
-      //Check if v1 and v2 are equal
+      // Check if v1 and v2 are equal
       System.out.println("V1 ("+v1+") and V2 ("+v2+") are equal");
+
     }else {
-      System.out.println("V1 ("+v1+") and V2 ("+v2+") are not equal");
+      // Compare v1 and v2
+      if(v1 > v2) {
+        // Check if v1 is bigger
+        System.out.println("V1 ("+v1+") is GREATER than V2 ("+v2+").");
+      }else {
+        // v2 is bigger
+        System.out.println("V1 ("+v1+") is LESS than V2 ("+v2+").");
+      }
+
     }
   }
 }
