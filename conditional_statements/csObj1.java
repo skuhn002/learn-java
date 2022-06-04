@@ -1,9 +1,9 @@
-/* Hello World (Java) */
+/* Compare Integers with Conditional Statements */
 
 class csObj1 {
   public static void main(String[] args) {
     /* This class compares integers to determine which integer is bigger or if they are equal */
-    
+
     int result = -2;
     int v1 = 343;
     int v2 = 343;
