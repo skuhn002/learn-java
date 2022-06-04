@@ -1,6 +1,6 @@
 /* Compare Integers with Conditional Statements */
 
-class csObj1 {
+class cs1 {
   public static void main(String[] args) {
     /* This class compares integers to determine which integer is bigger or if they are equal */
 
