@@ -7,3 +7,10 @@ To learn Java I built these projects:
       - if
       - if else
       - switch
+- Loops 1
+  - Features:
+    - Repeatedly Print a Statement Using Loops
+      - for
+      - while
+      - dowhile
+      - for+ (enhanced for) 
