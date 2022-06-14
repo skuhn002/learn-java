@@ -1,37 +1,39 @@
-/* Loops */
+/* Print a Statement Multiple Times using Loops */
 
 public class loop1 {
    public static void main(String args[]) {
-      int x = 10;
-      int [] numbers = {50, 60, 70, 80};
+     // Do Bart Simpson's Homework
+     //    Assignment: Print the phrase "Grammar is not a time of waste" n times using a for loop
 
-      System.out.print("While \n");
-      while( x < 20 ) {
-         System.out.print("value of x : " + x );
-         x++;
-         System.out.print("\n");
-      }
+     int n = 10; // Bart's teacher says to write the assigned phrase n times
+     int i = 1;
 
-      System.out.print(" \nDo... While \n");
-      do {
-         System.out.print("value of x : " + x );
-         x++;
-         System.out.print("\n");
-      } while( x < 30 );
+     String loop_type = "while"; // which type of loop to use
+     System.out.print("Loop Type: " + loop_type + "\n\n");
 
-
-      System.out.print(" \nFor \n");
-      for(int y = 30; y < 40; y = y + 1) {
-         System.out.print("value of y : " + y );
-         System.out.print("\n");
-      }
-
-
-      System.out.print(" \nEnhanced For \n");
-      for(int z : numbers ) {
-         System.out.print( z );
-         System.out.print(",");
-      }
-      System.out.print("\n");
+     switch(loop_type) {
+       case "for":
+         for (i=i; i <= n; i++) {
+           System.out.print("(" + i + ") Grammar is not a time of waste" + "\n");
+         }
+         break;
+       case "while":
+         while(i <= n) {
+           System.out.print("(" + i + ") Grammar is not a time of waste" + "\n");
+           i++;
+         }
+         break;
+       case "dowhile":
+         do {
+           System.out.print("(" + i + ") Grammar is not a time of waste" + "\n");
+           i++;
+         } while(i <= n);
+         break;
+       case "for+":
+         int [] repeats = {1,2,3,4,5,6,7,8,9,10}; //set to work for n = 10
+         for (int x : repeats) {
+           System.out.print("(" + x + ") Grammar is not a time of waste" + "\n");
+         }
+     }
     }
 }
