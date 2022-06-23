@@ -3,6 +3,7 @@
 class Vehicle {
   int n_whl;
   Boolean can_tow = false;
+  static String fuelType = "unleaded";
 
   Vehicle(int n_whl){
     this.n_whl = n_whl;
@@ -10,6 +11,7 @@ class Vehicle {
 
   public void check(){
     System.out.println("This vehicle has " + n_whl + " wheels");
+    System.out.println("This vehicle takes " + fuelType + " fuel");
   }
 }
 
@@ -31,6 +33,10 @@ public class kwd {
     Vehicle ride1 = new Vehicle(4);
     Truck ride2 = new Truck();
     ride1.check();
+    ride2.check();
     ride2.checkParent();
+    Vehicle.fuelType = "diesel";
+    ride1.check();
+    ride2.check();
   }
 }
