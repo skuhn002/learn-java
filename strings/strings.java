@@ -7,15 +7,23 @@ class SpellChecker{
 
   SpellChecker() {
     // Tell the user if the response was correctly spelled (Yes or No)
-    System.out.println("Spell Checker Initialized");
+    System.out.println("Spell Checker Initialized\n");
     this.isCorrect = response.equals(answer);
-    System.out.println(this.isCorrect.toString());
+
+    if(this.isCorrect) {
+      System.out.println("Answer: " + this.answer);
+      System.out.println("Response: " + this.response);
+    } else {
+      System.out.println("Answer: " + this.answer);
+      System.out.println("Response: " + this.response);
+    }
+
   }
 }
 
 public class strings{
   public static void main(String[] args) {
-    System.out.println("Main Initialized");
+    System.out.println("Main Initialized\n");
     SpellChecker check = new SpellChecker();
   }
 }
