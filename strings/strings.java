@@ -23,7 +23,7 @@ class SpellChecker{
       if(answer.length() > response.length()) {
         System.out.println("Too Few Letters");
       }
-      // Incorrect Letters - tell user all letters are in/correct if they had too few letters
+      // Incorrect Letters - tell user all letters are in/correct if they had too few letters???
       //  All letters entered are correct - - - no response
       //      for loop through length of answer
       //        check if letters at counter/index match
@@ -32,6 +32,10 @@ class SpellChecker{
       //      send feedback to user
       //        firstBad has a value - tell user what the first incorrect letter was
       //        firstBad is null - [no feedback]
+
+      for(int cnt = 0; cnt < answer.length(); cnt++){
+        System.out.println("Count is: " + (cnt + 1)); // make an array of 0's and 1's the same length as the response and set correct indexes to 1, incorrect to 0
+      }
 
       System.out.println("Answer: " + this.answer);
       System.out.println("Response: " + this.response);
