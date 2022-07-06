@@ -1,7 +1,7 @@
 /* String Manipulation */
 
 class SpellChecker{
-  String response = "ccavyar"; //word to spell is caviar
+  String response = "cavyar"; //word to spell is caviar
   String answer = "caviar";
   Boolean isCorrect = false; //default to false
   Boolean[] checkArr = new Boolean[answer.length()]; //check array - 0's are incorrect letters, and 1's are correct letters
@@ -38,10 +38,10 @@ class SpellChecker{
         System.out.println("Count is: " + (cnt + 1));
         // check for inccorect letter
         if(answer.charAt(cnt) == response.charAt(cnt)){
-          // System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is correct"); //test 1
+          System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is correct"); //test 1
           checkArr[cnt] = true;
         } else {
-          // System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is incorrect");
+          System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is incorrect");
           checkArr[cnt] = false;
         }
       }
@@ -50,7 +50,7 @@ class SpellChecker{
       // System.out.println("Response: " + this.response);
 
       // Show user which letters they got correct with "_" inbetween
-      System.out.println("This is what you got correct");
+      System.out.println("\nThis is what you got correct");
 
       for(int cnt = 0; cnt < checkArr.length; cnt++){
         if(checkArr[cnt]){
