@@ -23,3 +23,7 @@ To learn Java I built these projects:
       - super
       - static
       - final
+- Strings
+  - Features:
+    - Check Spelling using String Manipulation
+    - String Concatenation
