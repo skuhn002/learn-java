@@ -2,22 +2,25 @@
 // This program compares a response to an answer. The response is meant to be a response to a spelling question.
 
 class SpellChecker{
-  String response = "cavya"; //word to spell is caviar
+  String response = "cavyar"; //word to spell is caviar
   String answer = "caviar";
   Boolean isCorrect = false; //default to false
   Boolean[] checkArr = new Boolean[answer.length()]; //check array - 0's are incorrect letters, and 1's are correct letters
 
   SpellChecker() {
+    System.out.println("Response: " + this.response);
+
     // Tell the user if the response was correctly spelled (Yes or No)
-    System.out.println("Spell Checker Initialized\n");
+    // System.out.println("Spell Checker Initialized\n");
     this.isCorrect = false; // response.equals(answer);
 
     if(this.isCorrect) {
-      System.out.println("Answer: " + this.answer);
-      System.out.println("Response: " + this.response);
+      System.out.println("Correct!\n");
     } else {
       // Specify Mispelling
       // Too Many Letters
+      System.out.println("Inccorect\n");
+
       if(response.length() > answer.length()) {
         System.out.println("Too Many Letters");
       }
@@ -32,14 +35,11 @@ class SpellChecker{
         // check for inccorect letter
         if(cnt < response.length()){
           if(answer.charAt(cnt) == response.charAt(cnt)){
-            System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is correct"); //test 1
             checkArr[cnt] = true;
           } else {
-            System.out.println("Letter " + cnt + " (" + response.charAt(cnt) + ") is incorrect");
             checkArr[cnt] = false;
           }
         } else {
-          System.out.println("Letter " + cnt + " is missing");
           checkArr[cnt] = false;
         }
       }
@@ -61,7 +61,7 @@ class SpellChecker{
 
 public class strings{
   public static void main(String[] args) {
-    System.out.println("Main Initialized\n");
+    // System.out.println("Main Initialized\n");
     SpellChecker check = new SpellChecker();
   }
 }
