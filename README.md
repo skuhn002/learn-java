@@ -27,7 +27,7 @@ To learn Java I built these projects:
   - Features:
     - Check Spelling using String Manipulation
     - String Concatenation
-- Packages
+- Package
   - Features:
     - User-defined Packages
     - Use Multiple Packages in 1 File
