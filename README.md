@@ -31,3 +31,8 @@ To learn Java I built these projects:
   - Features:
     - User-defined Packages
     - Use Multiple Packages in 1 File
+- Interface
+  - Features:
+    - Create Interface
+    - Implement  Interface
+    - Extend Interface
