@@ -36,3 +36,9 @@ To learn Java I built these projects:
     - Create Interface
     - Implement  Interface
     - Extend Interface
+- Exceptions
+  - Features:
+    - Use throw and throws keywords
+    - Use try/catch/finally
+    - Create an Exception
+    
