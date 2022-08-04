@@ -1,4 +1,10 @@
 public class Exceptions {
+
+  public static void testMethod() throws ArrayIndexOutOfBoundsException {
+    // Some code in which I know an exception will occur
+    throw new ArrayIndexOutOfBoundsException();
+  }
+
   public static void main(String args[]){
     int[] array_1 = new int[2];
     array_1[0] = 10;
@@ -13,8 +19,9 @@ public class Exceptions {
     }
 
     finally {
-      System.out.println("Can't say we didn't see this coming");
+      System.out.println("Now I will throw the same exception using the testMethod method\n");
+      testMethod();
     }
-    
+
   }
 }
