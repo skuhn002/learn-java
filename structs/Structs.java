@@ -41,5 +41,40 @@ public class Structs {
     for(int i=0;i<arrLi1.size();i++){
       System.out.println("Element " + i + " - " + arrLi1.get(i));
     }
+
+    // instance a set
+    System.out.println("\nHashSet: ");
+
+    Set s1 = new HashSet();
+
+    int n = 3;
+
+    for(int i=0;i<n;i++){
+      System.out.println("Attempt to Add 1 to the Set");
+      s1.add(1);
+    }
+
+    System.out.println("Set: " + s1 + "\n");
+
+    for(int i=0;i<n;i++){
+      System.out.println("Attempt to Add 2 to the Set");
+      s1.add(2);
+    }
+
+    System.out.println("Set: " + s1 + "\n");
+
+    for(int i=0;i<n;i++){
+      System.out.println("Attempt to Add 3 to the Set");
+      s1.add(3);
+    }
+
+    System.out.println("Set: " + s1 + "\n");
+
+    for(int i=0;i<n;i++){
+      System.out.println("Attempt to Add \"Hello\" to the Set");
+      s1.add("Hello");
+    }
+
+    System.out.println("Set: " + s1 + "\n");
   }
 }
