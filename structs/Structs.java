@@ -31,5 +31,15 @@ public class Structs {
       System.out.println("Element " + i + " - " + a1[i]);
     }
 
+    System.out.println("\nArrayList: ");
+    ArrayList<Integer> arrLi1 = new ArrayList<Integer>();
+
+    arrLi1.add(1);
+    arrLi1.add(2);
+    arrLi1.add(1);
+
+    for(int i=0;i<arrLi1.size();i++){
+      System.out.println("Element " + i + " - " + arrLi1.get(i));
+    }
   }
 }
