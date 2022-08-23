@@ -41,4 +41,10 @@ To learn Java I built these projects:
     - Use throw and throws keywords
     - Use try/catch/finally
     - Create an Exception
-    
+- Data Structures (Structs)
+  - Features:
+    - Instance Structs
+      - HashMap
+      - Array
+      - ArrayList
+      - HashSet
